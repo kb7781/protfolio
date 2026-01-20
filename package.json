@@ -17,7 +17,7 @@
     "@types/three": "^0.182.0",
     "framer-motion": "^12.27.5",
     "mongoose": "^8.12.2",
-    "next": "^15.2.3",
+    "next": "15.2.8",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
