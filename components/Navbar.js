@@ -7,7 +7,7 @@ const Navbar = () => {
   const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   
   // Check if current route matches the link
   const isActive = (path) => router.pathname === path;
@@ -44,23 +44,6 @@ const Navbar = () => {
         <Link href="/about" className={`transition-colors duration-300 ${isActive('/about') ? 'text-blue-400' : 'text-gray-300 hover:text-white'}`}>About</Link>
         <Link href="/projects" className={`transition-colors duration-300 ${isActive('/projects') ? 'text-blue-400' : 'text-gray-300 hover:text-white'}`}>Projects</Link>
         <Link href="/contact" className={`transition-colors duration-300 ${isActive('/contact') ? 'text-blue-400' : 'text-gray-300 hover:text-white'}`}>Contact</Link>
-        
-        {/* Theme Toggle Button */}
-        <button 
-          onClick={toggleTheme} 
-          className="ml-4 p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors duration-300 focus:outline-none"
-          aria-label="Toggle theme"
-        >
-          {theme === 'dark' ? (
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-          ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-            </svg>
-          )}
-        </button>
       </div>
       
       {/* Mobile Menu Button */}
@@ -87,26 +70,6 @@ const Navbar = () => {
           <Link href="/about" className={`transition-colors duration-300 ${isActive('/about') ? 'text-blue-400' : 'text-gray-300 hover:text-white'}`}>About</Link>
           <Link href="/projects" className={`transition-colors duration-300 ${isActive('/projects') ? 'text-blue-400' : 'text-gray-300 hover:text-white'}`}>Projects</Link>
           <Link href="/contact" className={`transition-colors duration-300 ${isActive('/contact') ? 'text-blue-400' : 'text-gray-300 hover:text-white'}`}>Contact</Link>
-          
-          {/* Theme Toggle Button (Mobile) */}
-          <div className="flex items-center pt-2">
-            <span className="text-gray-400 mr-3">Toggle Theme:</span>
-            <button 
-              onClick={toggleTheme} 
-              className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors duration-300 focus:outline-none"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? (
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                </svg>
-              )}
-            </button>
-          </div>
         </div>
       )}
     </nav>

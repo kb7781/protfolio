@@ -12,10 +12,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@types/three": "^0.182.0",
+    "framer-motion": "^12.27.5",
     "mongoose": "^8.12.2",
     "next": "^15.2.3",
+    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
