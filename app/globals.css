@@ -161,11 +161,13 @@ body.cursor-hover .cursor-glow { width: 70px; height: 70px; background: radial-g
 
 #contact { background: var(--bg); }
 .contact-wrap { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; max-width: 1100px; margin: 0 auto; align-items: start; }
-.contact-info { display: flex; flex-direction: column; gap: 28px; padding-top: 10px; }
-.ci { display: flex; flex-direction: column; gap: 4px; }
-.ci-lbl { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.25em; color: var(--teal); opacity: 0.7; }
-.ci a, .ci span { font-size: 0.9rem; color: var(--text); transition: color 0.3s; }
-.ci a:hover { color: var(--violet); }
+.contact-info { display: flex; flex-direction: column; gap: 32px; padding-top: 15px; }
+.ci { display: flex; flex-direction: column; gap: 8px; border-left: 2px solid rgba(123,47,255,0.2); padding-left: 20px; transition: border-color 0.4s; position: relative; }
+.ci:hover { border-color: var(--teal); }
+.ci-lbl { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.3em; color: var(--text-dim); opacity: 0.8; text-transform: uppercase; display: flex; align-items: center; }
+.ci-lbl::before { content: ''; width: 6px; height: 1px; background: var(--text-dim); margin-right: 10px; opacity: 0.5; }
+.ci a, .ci span { font-family: var(--font-head); font-size: 1.35rem; font-weight: 400; color: var(--text); letter-spacing: -0.01em; transition: all 0.4s; display: inline-block; }
+.ci a:hover { color: var(--teal); transform: translateX(6px); }
 .concrete-form { position: relative; background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.008) 3px, rgba(255,255,255,0.008) 4px), linear-gradient(135deg, #0E0E18, #0A0A0F); border: 2px solid rgba(255,255,255,0.04); padding: 36px; }
 .chisel-field { margin-bottom: 22px; }
 .chisel-field label { display: block; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.25em; color: var(--teal); margin-bottom: 8px; opacity: 0.7; }
