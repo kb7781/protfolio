@@ -249,6 +249,10 @@ export default function Home() {
                                     <a href="https://github.com/kb7781" target="_blank" rel="noopener noreferrer">github.com/kb7781</a>
                                 </div>
                                 <div className="ci">
+                                    <span className="ci-lbl">LINKEDIN</span>
+                                    <a href="https://www.linkedin.com/in/kunal-bothra/" target="_blank" rel="noopener noreferrer">kunal-bothra</a>
+                                </div>
+                                <div className="ci">
                                     <span className="ci-lbl">INSTAGRAM</span>
                                     <a href="https://instagram.com/kb_7781" target="_blank" rel="noopener noreferrer">@kb_7781</a>
                                 </div>
@@ -284,6 +288,7 @@ export default function Home() {
                         <span className="footer-name">KUNAL BOTHRA &copy; 2026</span>
                         <div className="footer-links">
                             <a href="https://github.com/kb7781" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.linkedin.com/in/kunal-bothra/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                             <a href="https://instagram.com/kb_7781" target="_blank" rel="noopener noreferrer">Instagram</a>
                             <a href="mailto:kunalbothra.work@gmail.com">Email</a>
                         </div>
