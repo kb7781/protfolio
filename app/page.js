@@ -2,6 +2,15 @@ export default function Home() {
 
     const projects = [
         {
+            id: "PRJ-00",
+            title: "UGC Platform",
+            desc: "A modern, full-stack User-Generated Content (UGC) platform built for scale and performance. This application provides a seamless experience for uploading, managing, and interacting with media content, alongside secure authentication and AI-powered features.",
+            tech: ["React", "Node.js", "PostgreSQL", "Clerk", "Google GenAI", "Neon DB", "Sentry"],
+            link: "https://github.com/kb7781/ugc",
+            image: "p0.png"
+
+        },
+        {
             id: "PRJ-01",
             title: "Benevents",
             desc: "Scalable college event management platform with QR-based check-ins, Razorpay payment integration, REST APIs, and PostgreSQL. Supports 1000+ users.",
