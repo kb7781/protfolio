@@ -1,6 +1,16 @@
 export default function Home() {
 
     const projects = [
+
+          {
+            id: "PRJ-00",
+            title: "UGC Intelligence Platform",
+            desc: "A full-stack AI system that analyzes user-generated content across text, audio, and video using BERT-based NLP models. It detects toxicity, evaluates content quality, and generates actionable insights through a real-time API-driven architecture.",
+            tech: ["React", "FastAPI", "PyTorch", "Transformers", "Hugging Face", "Whisper", "Tailwind"],
+            link: "https://github.com/kb7781/ugc-intelligence-platform",
+            image: "p.png"
+        },
+
         {
             id: "PRJ-00",
             title: "UGC Platform",
